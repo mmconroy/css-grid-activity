@@ -25,11 +25,11 @@ nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .nav__list-wrapper {
@@ -46,13 +46,24 @@ nav {
   list-style: none;
 }
 
-iframe,
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtube_video {
+  width: 100%;
+  height: auto;
+}
+
 .hero-video {
   width: 100%;
   height: auto;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .hero-container {
@@ -62,9 +73,9 @@ iframe,
 
 .hero-container .container {
   -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  grid-template-columns: 100%;
   -ms-grid-rows: auto auto auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
 }
 
 .hero__intro {
@@ -72,7 +83,7 @@ iframe,
   grid-row: 1;
   width: 20rem;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .hero__team {
@@ -82,7 +93,7 @@ iframe,
   width: -moz-fit-content;
   width: fit-content;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .hero__board {
@@ -92,7 +103,7 @@ iframe,
   width: -moz-fit-content;
   width: fit-content;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .hero__mentors {
@@ -102,7 +113,7 @@ iframe,
   width: -moz-fit-content;
   width: fit-content;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .hero__advisors {
@@ -112,7 +123,7 @@ iframe,
   width: -moz-fit-content;
   width: fit-content;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .hero__students {
@@ -122,7 +133,7 @@ iframe,
   width: -moz-fit-content;
   width: fit-content;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .btn-submit,
@@ -134,8 +145,8 @@ iframe,
   border-radius: 6px;
   width: 8em;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   text-align: center;
   display: inline-block;
 }
@@ -148,14 +159,14 @@ iframe,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .signup__heading,
@@ -171,11 +182,11 @@ iframe,
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 input {
@@ -190,16 +201,16 @@ input {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .nav__links {
     margin: 0 1em 0 1em;
   }
   .nav__list-item {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .nav__btn {
     background-color: blue;
@@ -209,8 +220,8 @@ input {
     border-radius: 6px;
     width: 8em;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     text-align: center;
     display: inline-block;
   }
@@ -220,9 +231,9 @@ input {
   }
   .hero__container .container {
     -ms-grid-columns: 20vw 20vw 20vw 20vw 20vw;
-        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
     -ms-grid-rows: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
   }
   .hero__intro {
     -ms-grid-column: 1;
@@ -232,7 +243,7 @@ input {
     grid-row: 1;
     width: 40rem;
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .hero__team {
     width: auto;
@@ -245,7 +256,7 @@ input {
     width: -moz-fit-content;
     width: fit-content;
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .hero__board {
     -ms-grid-column: 3;
@@ -257,7 +268,7 @@ input {
     width: -moz-fit-content;
     width: fit-content;
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .hero__mentors {
     -ms-grid-column: 1;
@@ -269,7 +280,7 @@ input {
     width: -moz-fit-content;
     width: fit-content;
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .hero__advisors {
     -ms-grid-column: 3;
@@ -281,7 +292,7 @@ input {
     width: -moz-fit-content;
     width: fit-content;
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .hero__video {
     -ms-grid-column: 1;
@@ -292,7 +303,7 @@ input {
     width: 26rem;
     height: auto;
     -ms-grid-column-align: end;
-        justify-self: end;
+    justify-self: end;
   }
   .hero__students {
     -ms-grid-column: 3;
@@ -302,26 +313,26 @@ input {
     grid-row: 4;
     width: 75%;
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
 }
 
 @media (min-width: 1000px) {
   .hero__team {
     -ms-grid-column-align: end;
-        justify-self: end;
+    justify-self: end;
   }
   .hero__board {
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .hero__mentors {
     -ms-grid-column-align: end;
-        justify-self: end;
+    justify-self: end;
   }
   .hero__advisors {
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
